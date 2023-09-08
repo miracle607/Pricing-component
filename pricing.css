@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(240, 78%, 98%);
+    background-image: url(./bg-top.svg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pricetext{
+    color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.undertext{
+    justify-content: baseline;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.togglediv{
+    border: 1px solid white;
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    background-color: white;
+    margin-left: 15px;
+    position: absolute;
+    top:-1.5px;
+}
+.togglediv.active{
+    left:-15px;
+}
+
+
+
+.firstbutton{
+    position: relative;
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    padding: .2rem 2rem;
+    background: linear-gradient(to bottom, rgb(36, 17, 185), rgba(1, 1, 4, 0.2));
+}
+
+.maincontainer{
+    border: none;
+    height: 70vh;
+    width: 80vw;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+hr{
+    font-size: smaller;
+    background-color: lightgray;
+}
+
+.firstbox {
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    color: gray;
+    height: 40vh;
+    width: 20vw;
+    padding: 20px;
+    background-color: white;
+    line-height: 30px;
+    text-align: center;
+}
+
+.firstbox > h1{
+    color: black;
+    margin: 15px;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.secondbutton {
+    border: 2px solid blue;
+    color: white;
+    margin-top: 10px;
+    background-color: blue;
+    padding: .2rem 4rem;
+}
+
+.secondbox {
+    border: 1px solid white;
+    border-radius: 20px;
+    color: gray;
+    height: 50vh;
+    width: 20vw;
+    padding: 20px;
+    background-color: blue;
+    line-height: 38px;
+    text-align: center;
+}
+
+.secondbox > h1{
+    color: white;
+    margin: 10px;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.thirdbutton{
+    border: 2px solid white;
+    color: blue;
+    margin-top: 10px;
+    background-color: white;
+    padding: .2rem 4rem;
+}
+
+.thirdbox{
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    color: gray;
+    height: 40vh;
+    width: 20vw;
+    padding: 20px;
+    background-color: white;
+    line-height: 30px;
+    text-align: center;
+}
+
+.thirdbox > h1{
+    color: black;
+    margin: 10px;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.fourtbutton{
+    border: 2px solid white;
+    color: white;
+    margin-top: 10px;
+    background-color: blue;
+    padding: .2rem 4rem;
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+
+    .maincontainer{
+        display: grid;
+        width: 80%;
+        
+    }
+
+    .pricetext {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .firstbox, .secondbox, .thirdbox{
+        width: 100%;
+        height: fit-content;
+        margin-top: 20px;
+    }
+
+}
+    
